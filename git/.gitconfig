@@ -1,0 +1,21 @@
+# ~/.gitconfig
+
+[user]
+	name = Marek Mateja
+	email = matejowy@gmail.com 
+[core]
+	autocrlf = input	# delete Windows line endings on commit
+	editor = nano
+[color]
+	ui = true
+[merge]
+	tool = meld
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	tree = log --graph --oneline --all --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Cred"
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --numstat
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --date=relative
