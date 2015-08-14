@@ -1,6 +1,4 @@
-# WARNING! This file is now depraceted. I moved to oh-my-fish config.
-
-# ~/.config/fish/config.fish
+# ~/.oh-my-fish/custom/git.load
 
 alias g='git'
 
@@ -34,6 +32,3 @@ alias gsa='git stash apply'
 alias gsl='git stash list'
 alias gsp='git stash pop'
 alias gst='git status'
-
-# disable shell welcome message
-set fish_greeting ''
