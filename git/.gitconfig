@@ -5,7 +5,7 @@
 	email = matejowy@gmail.com 
 [core]
 	autocrlf = input	# delete Windows line endings on commit
-	editor = nano
+	editor = vim
 [color]
 	ui = true
 [merge]
