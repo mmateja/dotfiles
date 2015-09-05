@@ -38,6 +38,9 @@ set autoindent
 filetype plugin on
 filetype plugin indent on
 
+" Toggle paste mode (disable auto indentation) 
+set pastetoggle=pm
+
 " Show row and column ruler information
 set ruler
 
