@@ -37,14 +37,16 @@ ask() {
 SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 LINK="ln -is"
 
+
+if ask "Link Oh-My-Fish configuration (oh-my-fish/init.fish)?" Y; then
+	echo "set -x CONFIGS_PATH $SCRIPT_DIR" > ~/.config/omf/init.fish
+	echo 'source $CONFIGS_PATH/oh-my-fish/init.fish' >> ~/.config/omf/init.fish
+fi
+
 if ask "Symlink ~/.gitconfig?" Y; then
 	$LINK $SCRIPT_DIR/git/.gitconfig ~/.gitconfig
 fi
 
 if ask "Symlink ~/.vimrc?" Y; then
 	$LINK $SCRIPT_DIR/vim/.vimrc ~/.vimrc
-fi
-
-if ask "Symlink Oh-My-Fish configuration?" Y; then
-	$LINK $SCRIPT_DIR/oh-my-fish/git.load ~/.oh-my-fish/custom/git.load
 fi

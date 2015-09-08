@@ -1,5 +1,3 @@
-# ~/.oh-my-fish/custom/git.load
-
 alias g	'git'
 
 alias ga	'git add'
