@@ -28,9 +28,9 @@ abbr gf		'git fetch'
 
 abbr ggr	'git grep -i -n --break --heading'
 
-abbr glg	'git log'
-abbr gl		'git pull'
-abbr glr	'git pull --rebase'
+abbr gl		'git log'
+abbr gpl	'git pull'
+abbr gplr	'git pull --rebase'
 
 abbr gp		'git push'
 abbr gp!	'git push -f'
@@ -42,6 +42,7 @@ abbr grbc	'git rebase --continue'
 abbr grbi	'git rebase -i'
 abbr grh	'git reset --hard'
 abbr grhh	'git reset --hard HEAD'
+abbr grs	'git reset --soft'
 
 abbr gsh	'git show'
 abbr gs		'git stash'
