@@ -14,9 +14,9 @@ abbr gc!	'git commit -v --amend'
 abbr gca	'git commit -v -a'
 abbr gca!	'git commit -v -a --amend'
 abbr gco	'git checkout'
+abbr gcm	'git checkout -m'
 abbr gcb	'git checkout -b'
 abbr gcd	'git checkout develop'
-abbr gcm	'git checkout master'
 abbr gcp	'git cherry-pick'
 abbr gcl	'git clone'
 abbr gclr	'git clean -fd'
@@ -29,6 +29,9 @@ abbr gf		'git fetch'
 abbr ggr	'git grep -i -n --break --heading'
 
 abbr gl		'git log'
+
+abbr gm		'git merge --no-ff'
+
 abbr gpl	'git pull'
 abbr gplr	'git pull --rebase'
 
