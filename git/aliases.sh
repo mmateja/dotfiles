@@ -22,6 +22,7 @@ abbr gcl	'git clone'
 abbr gclr	'git clean -fd'
 
 abbr gd		'git diff'
+abbr gds	'git diff --stat'
 abbr gdc	'git diff --cached'
 
 abbr gf		'git fetch'
@@ -31,8 +32,9 @@ abbr ggr	'git grep -i -n --break --heading'
 abbr gl		'git log'
 
 abbr gm		'git merge --no-ff'
+abbr gmff	'git merge --ff-only'
 
-abbr gpl	'git pull'
+abbr gpl	'git pull --ff-only'
 abbr gplr	'git pull --rebase'
 
 abbr gp		'git push'
@@ -43,6 +45,7 @@ abbr grb	'git rebase'
 abbr grba	'git rebase --abort'
 abbr grbc	'git rebase --continue'
 abbr grbi	'git rebase -i'
+abbr ggrh	'git reset --hard origin/(git_branch_name)'
 abbr grh	'git reset --hard'
 abbr grhh	'git reset --hard HEAD'
 abbr grs	'git reset --soft'
