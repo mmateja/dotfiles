@@ -57,3 +57,14 @@ abbr gsd	'git stash drop'
 abbr gsl	'git stash list'
 abbr gsp	'git stash pop'
 abbr gst	'git status'
+
+function gdo
+	if count $argv > /dev/null
+		set branch $argv
+	else
+		set branch (git_branch_name)
+	end
+	git fetch --quiet
+	git --no-pager diff --stat $branch origin/$branch
+end
+
