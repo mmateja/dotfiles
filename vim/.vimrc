@@ -14,7 +14,7 @@ set textwidth=120
 set showmatch
 
 " Enable spell-checking
-set spell
+"set spell
 
 " Use visual bell (no beeping)
 set visualbell
