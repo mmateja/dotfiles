@@ -57,6 +57,7 @@ abbr gsa	'git stash apply'
 abbr gsd	'git stash drop'
 abbr gsl	'git stash list'
 abbr gsp	'git stash pop'
+abbr gss	'git stash show -p'
 abbr gst	'git status'
 
 function gdo
