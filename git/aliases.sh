@@ -37,9 +37,9 @@ abbr gmff	'git merge --ff-only'
 abbr gpl	'git pull --ff-only'
 abbr gplr	'git pull --rebase'
 
-abbr gp		'git push'
-abbr gp!	'git push -f'
-abbr gpt	'git push --tags'
+abbr gp		'git push origin (git_branch_name)'
+abbr gp!	'git push -f origin (git_branch_name)'
+abbr gpt	'git push --tags origin (git_branch_name)'
 
 abbr grb	'git rebase'
 abbr grba	'git rebase --abort'
