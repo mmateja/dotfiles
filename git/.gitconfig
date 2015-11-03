@@ -1,8 +1,12 @@
 # ~/.gitconfig
 
-[user]
-	name = Marek Mateja
-	email = matejowy@gmail.com 
+# Place personal info in .gitconfig-personal
+# [user]
+# 	name = <user name>
+# 	email = <mail>
+
+[include]
+	path = .gitconfig-personal
 [core]
 	autocrlf = input	# delete Windows line endings on commit
 	editor = vim
