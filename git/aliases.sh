@@ -31,7 +31,7 @@ abbr ggr	'git grep -i -n --break --heading'
 
 abbr gl		'git log'
 
-abbr gm		'git merge --no-ff'
+abbr gm		'git merge'
 abbr gmff	'git merge --ff-only'
 
 abbr gpl	'git pull --ff-only'
