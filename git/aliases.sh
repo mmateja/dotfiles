@@ -34,7 +34,7 @@ abbr gl		'git log'
 abbr gm		'git merge'
 abbr gmff	'git merge --ff-only'
 
-abbr gpl	'git pull --ff-only'
+abbr gpl	'git pull'
 abbr gplr	'git pull --rebase'
 
 abbr gp		'git push origin (git_branch_name)'
