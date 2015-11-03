@@ -24,6 +24,7 @@ abbr gclr	'git clean -fd'
 abbr gd		'git diff'
 abbr gds	'git diff --stat'
 abbr gdc	'git diff --cached'
+abbr gdo	'git diff origin/(git_branch_name)'
 
 abbr gf		'git fetch'
 
@@ -60,7 +61,7 @@ abbr gsp	'git stash pop'
 abbr gss	'git stash show -p'
 abbr gst	'git status'
 
-function gdo
+function gdos
 	if count $argv > /dev/null
 		set branch $argv
 	else
