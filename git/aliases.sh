@@ -52,6 +52,7 @@ abbr ggrh	'git reset --hard origin/(git_branch_name)'
 abbr grh	'git reset --hard'
 abbr grhh	'git reset --hard HEAD'
 abbr grs	'git reset --soft'
+abbr grpo	'git remote prune origin'
 
 abbr gsh	'git show'
 abbr gs		'git stash'
