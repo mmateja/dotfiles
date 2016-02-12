@@ -49,9 +49,9 @@ alias grbi	'env GIT_EDITOR='$CONFIGS_PATH/scripts/git-chain-rebase/rebase-editor
 alias grbp	'/tmp/chain_rebase_push_script.sh'
 abbr grbd	'git rebase origin/develop'
 abbr gr		'git reset'
-abbr ggrh	'git reset --hard origin/(git_branch_name)'
+abbr grho	'git reset --hard origin/(git_branch_name)'
 abbr grh	'git reset --hard'
-abbr grhh	'git reset --hard HEAD'
+abbr grhh	'git reset --hard @'
 abbr grs	'git reset --soft'
 abbr grpo	'git remote prune origin'
 
