@@ -1,12 +1,12 @@
 # ~/.gitconfig
 
-# Place personal info in .gitconfig-personal
+# Place personal info in ~/.gitconfig-local
 # [user]
 # 	name = <user name>
 # 	email = <mail>
 
 [include]
-	path = .gitconfig-personal
+	path = .gitconfig-local
 [core]
 	autocrlf = input	# delete Windows line endings on commit
 	editor = vim
