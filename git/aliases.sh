@@ -18,6 +18,7 @@ abbr gcm 'git checkout -m'
 abbr gcb 'git checkout -b'
 abbr gcd 'git checkout develop'
 abbr gcp 'git cherry-pick'
+abbr gcpa 'git cherry-pick --abort'
 abbr gcl 'git clone'
 abbr gclr 'git clean -fd'
 
