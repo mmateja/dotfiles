@@ -8,3 +8,4 @@ function push_branch {
 	    git push -f origin $1:$1
 	fi
 }
+

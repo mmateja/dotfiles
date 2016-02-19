@@ -46,6 +46,8 @@ File.open(todo_file, 'r').each_line do |line|
 end
 
 File.open('/tmp/chain_rebase_push_script.sh', 'w') do |f|
+  f.write("#!/bin/bash\n\n");
+
   f.write("source #{File.join(File.dirname(__FILE__), '/push_branches.sh')}\n")
 
   branches_to_push.each do |branch|
