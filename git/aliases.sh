@@ -40,6 +40,7 @@ abbr gpl 'git pull'
 abbr gplr 'git pull --rebase'
 
 abbr gp 'git push origin (git_branch_name)'
+abbr gpu 'git push -u origin (git_branch_name)'
 abbr gp! 'git push -f origin (git_branch_name)'
 abbr gpt 'git push --tags origin (git_branch_name)'
 
