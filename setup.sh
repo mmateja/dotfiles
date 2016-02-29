@@ -39,8 +39,13 @@ LINK="ln -is"
 
 
 if ask "Link Fish Shell configuration (~/.config/fish/config.fish)?" Y; then
-	echo "set -x CONFIGS_PATH $SCRIPT_DIR" > ~/.config/fish/config.fish
-	echo 'source $CONFIGS_PATH/fish/config.fish' >> ~/.config/fish/config.fish
+	echo "set -U CONFIGS_PATH $SCRIPT_DIR" | fish
+	for f in $SCRIPT_DIR/fish/functions/*
+	do
+		echo "Linking $f function"
+		$LINK $f ~/.config/fish/functions/${f##*/}
+	done
+	echo "reload_config" | fish
 fi
 
 if ask "Symlink ~/.gitconfig?" Y; then
