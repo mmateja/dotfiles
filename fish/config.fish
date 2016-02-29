@@ -4,6 +4,6 @@
 # remove welcome message
 set fish_greeting
 
-source $CONFIGS_PATH/git/aliases.sh
+source $CONFIGS_PATH/fish/aliases.fish
 source ~/.local-config.fish
 
