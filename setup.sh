@@ -38,9 +38,9 @@ SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 LINK="ln -is"
 
 
-if ask "Link Oh-My-Fish configuration (oh-my-fish/init.fish)?" Y; then
-	echo "set -x CONFIGS_PATH $SCRIPT_DIR" > ~/.config/omf/init.fish
-	echo 'source $CONFIGS_PATH/oh-my-fish/init.fish' >> ~/.config/omf/init.fish
+if ask "Link Fish Shell configuration (~/.config/fish/config.fish)?" Y; then
+	echo "set -x CONFIGS_PATH $SCRIPT_DIR" > ~/.config/fish/config.fish
+	echo 'source $CONFIGS_PATH/fish/config.fish' >> ~/.config/fish/config.fish
 fi
 
 if ask "Symlink ~/.gitconfig?" Y; then
