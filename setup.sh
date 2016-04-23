@@ -55,7 +55,7 @@ if ask "Link Fisher plugins file (~/.config/fish/fishfile)?" Y; then
 fi
 
 if ask "Symlink ~/.gitconfig?" Y; then
-	$LINK $SCRIPT_DIR/git/.gitconfig ~/.gitconfig
+	$LINK $SCRIPT_DIR/git/gitconfig ~/.gitconfig
 fi
 
 if ask "Symlink ~/.vimrc?" Y; then
