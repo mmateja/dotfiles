@@ -49,6 +49,11 @@ if ask "Link Fish Shell configuration (~/.config/fish/config.fish)?" Y; then
 	echo "reload_config" | fish
 fi
 
+if ask "Link Fisher plugins file (~/.config/fish/fishfile)?" Y; then
+	$LINK $SCRIPT_DIR/fish/fishfile ~/.config/fish/fishfile
+	echo 'fisher' | fish
+fi
+
 if ask "Symlink ~/.gitconfig?" Y; then
 	$LINK $SCRIPT_DIR/git/.gitconfig ~/.gitconfig
 fi
