@@ -59,5 +59,5 @@ if ask "Symlink ~/.gitconfig?" Y; then
 fi
 
 if ask "Symlink ~/.vimrc?" Y; then
-	$LINK $SCRIPT_DIR/vim/.vimrc ~/.vimrc
+	$LINK $SCRIPT_DIR/vim/vimrc ~/.vimrc
 fi
