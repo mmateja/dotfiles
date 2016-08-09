@@ -12,6 +12,8 @@
 	editor = vim
 [color]
 	ui = true
+[commit]
+	verbose = true
 [merge]
 	tool = meld
 	ff = false
