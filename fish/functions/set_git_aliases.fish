@@ -11,6 +11,7 @@ function set_git_aliases --description 'Set Git aliases'
 	abbr gbl 'git blame'
 	abbr gb 'git branch'
 	abbr gba 'git branch -a'
+	abbr gbsu 'git branch --set-upstream-to=origin/(git_branch_name) (git_branch_name)'
 
 	abbr gc 'git commit'
 	abbr gc! 'git commit --amend'
