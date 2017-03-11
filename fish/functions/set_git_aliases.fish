@@ -32,6 +32,7 @@ function set_git_aliases --description 'Set Git aliases'
 	abbr gdo 'git diff origin/(git_branch_name)'
 
 	abbr gf 'git fetch'
+	abbr gft 'git fetch --tags'
 
 	abbr ggr 'git grep -i -n --break --heading'
 
