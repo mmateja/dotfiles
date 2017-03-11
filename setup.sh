@@ -38,7 +38,7 @@ SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 LINK="ln -is"
 
 
-if ask "Link Fish Shell configuration (~/.config/fish/config.fish)?" Y; then
+if ask "Link Fish Shell functions?" Y; then
 	echo "set -U CONFIGS_PATH $SCRIPT_DIR" | fish
 	mkdir -p ~/.config/fish/functions/
 	for f in $SCRIPT_DIR/fish/functions/*
