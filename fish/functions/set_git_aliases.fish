@@ -39,6 +39,7 @@ function set_git_aliases --description 'Set Git aliases'
 	abbr gl 'git log'
 
 	abbr gm 'git merge'
+	abbr gma 'git merge --abort'
 	abbr gmff 'git merge --ff-only'
 
 	abbr gpl 'git pull'
