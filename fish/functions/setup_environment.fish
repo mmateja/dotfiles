@@ -3,6 +3,7 @@ function setup_environment --description 'Load configuration from the repository
 
 	set_general_config
 	set_git_aliases
+	fish_update_completions
 
 	echo 'Done.'
 end
