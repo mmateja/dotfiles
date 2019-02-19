@@ -46,7 +46,7 @@ if ask "Link Fish Shell functions?" Y; then
 		echo "Linking $f function"
 		$LINK $f ~/.config/fish/functions/${f##*/}
 	done
-	echo "reload_config" | fish
+	echo "setup_environment" | fish
 fi
 
 if ask "Link Fisher plugins file (~/.config/fish/fishfile)?" Y; then
