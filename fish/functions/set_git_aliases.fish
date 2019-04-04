@@ -47,7 +47,7 @@ function set_git_aliases --description 'Set Git aliases'
 
 	abbr gp 'git push origin (git_branch_name)'
 	abbr gpu 'git push -u origin (git_branch_name)'
-	abbr gp! 'git push -f origin (git_branch_name)'
+	abbr gp! 'git push --force-with-lease origin (git_branch_name)'
 	abbr gpt 'git push --tags origin (git_branch_name)'
 
 	abbr grb 'git rebase'
