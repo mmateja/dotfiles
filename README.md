@@ -1,4 +1,4 @@
-# configs
+# dotfiles
 
 Configuration files repository.
 
