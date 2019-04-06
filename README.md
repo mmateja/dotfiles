@@ -8,3 +8,9 @@ Configuration files repository.
 2. Install [Fisher](https://github.com/jorgebucaran/fisher).
 3. Run `setup.sh` script to link configuration.
 
+# Notes
+
+### Terminal
+
+I use iTerm2 with Spacedust theme from https://iterm2colorschemes.com/
+
