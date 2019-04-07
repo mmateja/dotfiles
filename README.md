@@ -6,7 +6,7 @@ Configuration files repository.
 
 1. Install [Fish shell](https://fishshell.com/).
 2. Install [Fisher](https://github.com/jorgebucaran/fisher).
-3. Run `setup.sh` script to link configuration.
+3. Run `setup.rb` script to link configuration.
 
 ## Notes
 
