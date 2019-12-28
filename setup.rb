@@ -38,6 +38,7 @@ end
 
 section('git') do
   symlink('git/gitconfig', '.gitconfig')
+  symlink('git/gitignore', '.gitignore')
 end
 
 section('fish') do
