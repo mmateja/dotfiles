@@ -1,6 +1,7 @@
 function set_navigational_aliases --description 'Set navigational aliases'
 	echo 'Setting navigational aliases...'
 
+	abbr cdb 'cd ~/dev/baldur'
 	abbr cdc 'cd ~/dev/ns/ns-chef-repo'
 	abbr cdh 'cd ~/dev/ns/hydra'
 	abbr cdi 'cd ~/dev/ns/icarus'
