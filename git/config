@@ -1,18 +1,14 @@
-# ~/.gitconfig
-
 [user]
 	name = Marek Mateja
 	useConfigOnly = true
 [core]
 	autocrlf = input	# delete Windows line endings on commit
 	editor = vim
-	excludesfile = ~/.gitignore
 [color]
 	ui = true
 [commit]
 	verbose = true
 [merge]
-	tool = meld
 	ff = false
 [alias]
 	tree = log --graph --oneline --all --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Cred"
