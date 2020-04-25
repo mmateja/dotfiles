@@ -36,18 +36,6 @@ section('vim') do
   symlink('vim/vimrc', '.vimrc')
 end
 
-section('git') do
-  symlink('git/gitconfig', '.gitconfig')
-  symlink('git/gitignore', '.gitignore')
-end
-
-section('fish') do
-  Dir['fish/functions/*.fish'].each do |function_file|
-    symlink(function_file, File.join('.config/fish/functions', File.basename(function_file)))
-  end
-  symlink('fish/fishfile', '.config/fish/fishfile')
-end
-
 puts 'symlinking finished'
 puts 'run \'fisher\' to install fish dependencies'
 puts 'run \'setup_environment\' command to load fish configuration'

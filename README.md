@@ -4,9 +4,10 @@ Configuration files repository.
 
 ## Installation
 
+1. Clone the repository in the HOME directory `git clone git@github.com:mmateja/dotfiles.git`
 1. Install [Fish shell](https://fishshell.com/).
-2. Install [Fisher](https://github.com/jorgebucaran/fisher).
-3. Run `setup.rb` script to link configuration.
+1. Install [Fisher](https://github.com/jorgebucaran/fisher).
+1. Run `setup.rb` script to bootstrap environment.
 
 ## Notes
 
