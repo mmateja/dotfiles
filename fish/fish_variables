@@ -6,6 +6,7 @@ SETUVAR _fish_abbr_cdc:cd\x20\x7e/dev/ns/ns\x2dchef\x2drepo
 SETUVAR _fish_abbr_cdh:cd\x20\x7e/dev/ns/hydra
 SETUVAR _fish_abbr_cdi:cd\x20\x7e/dev/ns/icarus
 SETUVAR _fish_abbr_cdm:cd\x20\x7e/dev/ns/mjollnir
+SETUVAR _fish_abbr_cdn:\x7e/dev/nyu/nyu\x2ddaily\x2dsymptom\x2dcheck/
 SETUVAR _fish_abbr_cds:cd\x20\x7e/dev/ns/socialguide
 SETUVAR _fish_abbr_cdt:cd\x20\x7e/dev/ns/ns\x2dterraform
 SETUVAR _fish_abbr_cdw:cd\x20\x7e/dev/ns/ns\x2dweb
