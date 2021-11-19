@@ -52,17 +52,13 @@ def section(name)
   puts
 end
 
-section('XDG base directory configuration') do
-  create('.profile', <<~SCRIPT)
-    export XDG_CONFIG_HOME=#{dotfiles_dir}
-    export XDG_DATA_HOME=#{Dir.home}/.data
-  SCRIPT
-end
-
 section('Fish login script') do
   create('.fish-login.sh', <<~SCRIPT, executable: true)
-    #!/bin/sh -l
-    # run sh first to read ~/.profile and set XDG environment variables
+    #!/bin/zsh -l
+
+    export XDG_CONFIG_HOME=#{dotfiles_dir}
+    export XDG_DATA_HOME=#{Dir.home}/.data
+
     exec -l fish "$@"
   SCRIPT
 
