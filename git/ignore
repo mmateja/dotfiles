@@ -1,4 +1,8 @@
+commit-msg
 .idea/
 .DS_Store
 node_modules/
+.aws-sam/
+.pytest_cache
+__pycache__
 
