@@ -4,15 +4,36 @@
 [core]
 	autocrlf = input	# delete Windows line endings on commit
 	editor = vim
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[pager]
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
+[delta]
+	features = side-by-side line-numbers decorations
+	navigate = true		# use n and N to move between diff sections
+	light = false		# set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+[delta "decorations"]
+	commit-decoration-style = bold yellow box ul
+	file-style = bold yellow ul
+	file-decoration-style = none
 [color]
 	ui = true
 [commit]
 	verbose = true
 [merge]
 	ff = false
+	conflictstyle = diff3
 [push]
 	default = current
 	autoSetupRemote = true
 [pull]
 	ff = only
+[checkout]
+	defaultRemote = origin
+[diff]
+	colorMoved = default
 
