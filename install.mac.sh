@@ -10,5 +10,6 @@ brew install \
 	ipcalc \
 	ncdu \
 	homebrew/cask-fonts/font-dejavu-sans-mono-nerd-font \
-	starship
+	starship \
+	fx
 
