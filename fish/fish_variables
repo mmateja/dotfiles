@@ -50,6 +50,7 @@ SETUVAR _fish_abbr_gp_21_:git\x20push\x20\x2d\x2dforce\x2dwith\x2dlease
 SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gplr:git\x20pull\x20\x2d\x2drebase
 SETUVAR _fish_abbr_gpt:git\x20push\x20\x2d\x2dtags
+SETUVAR _fish_abbr_gpu:git\x20push\x20\x2du\x20origin\x20\x28git_branch_name\x29
 SETUVAR _fish_abbr_gr:git\x20reset
 SETUVAR _fish_abbr_grb:git\x20rebase
 SETUVAR _fish_abbr_grba:git\x20rebase\x20\x2d\x2dabort
