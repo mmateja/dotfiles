@@ -9,10 +9,12 @@ SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_cdb:cd\x20\x7e/dev/baldur
 SETUVAR _fish_abbr_cdn:\x7e/dev/nyu/nyu\x2ddaily\x2dsymptom\x2dcheck/
 SETUVAR _fish_abbr_dc:docker\x2dcompose
-SETUVAR _fish_abbr_dcb:docker\x2dcompose\x20build
+SETUVAR _fish_abbr_dcb:docker\x20compose\x20build
+SETUVAR _fish_abbr_dcd:docker\x20compose\x20down
 SETUVAR _fish_abbr_dce:docker\x2dcompose\x20exec
 SETUVAR _fish_abbr_dcr:docker\x2dcompose\x20run
-SETUVAR _fish_abbr_dcu:docker\x2dcompose\x20up
+SETUVAR _fish_abbr_dcu:docker\x20compose\x20up
+SETUVAR _fish_abbr_dcub:docker\x20compose\x20up\x20\x2d\x2dbuild
 SETUVAR _fish_abbr_ds:du\x20\x2dh\x20\x2dd\x201\x20\x2e\x20\x7c\x20gsort\x20\x2dhr
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
