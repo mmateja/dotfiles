@@ -9,6 +9,16 @@ Configuration files repository.
    git clone git@github.com:mmateja/dotfiles.git $HOME/.dotfiles
    ```
 
+1. Install [Brew](https://brew.sh/)
+   ```
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+
+1. Run Mac install script to install all the apps.
+   ```
+   ./install.mac.sh
+   ```
+
 1. Run setup script and follow instructions.
    ```
    ./setup.rb
@@ -19,4 +29,3 @@ Configuration files repository.
 ### Terminal
 
 I use [iTerm2](https://www.iterm2.com/) with Spacedust theme from https://iterm2colorschemes.com/
-

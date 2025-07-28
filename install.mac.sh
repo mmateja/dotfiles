@@ -1,15 +1,69 @@
 #!/bin/bash
 
 brew update
+
+
+######################### Brew Packages #########################
+
 brew install \
 	fish \
-	tig \
+	fisher \
 	bat \
+	awscli \
+	git \
+	go-task \
+	htop \
+	node \
+	vlc \
+	pwgen \
+	tig \
+	watch \
 	z \
-	git-delta \
-	ipcalc \
-	ncdu \
-	homebrew/cask-fonts/font-dejavu-sans-mono-nerd-font \
-	starship \
-	fx
+	colima \
+	docker
 
+
+######################### Cask Packages #########################
+
+# Browsers
+brew install --cask \
+	firefox \
+	firefox@developer-edition \
+	brave-browser
+
+# Communication
+brew install --cask \
+	slack \
+	signal \
+	messenger \
+	whatsapp \
+	zoom
+
+# Editors
+brew install --cask \
+	cursor \
+	rubymine
+
+# Music / Video
+brew install --cask \
+	spotify \
+	reaper \
+	losslesscut
+
+# File Sharing
+brew install --cask \
+	localsend \
+	openmtp
+
+# Productivity
+brew install --cask \
+	rectangle \
+	notion \
+	todoist \
+	libreoffice
+
+# Other
+brew install --cask \
+	iterm2 \
+	1password \
+	gramps
