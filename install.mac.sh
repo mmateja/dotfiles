@@ -37,6 +37,7 @@ brew install --cask \
 	signal \
 	messenger \
 	whatsapp \
+	microsoft-teams \
 	zoom
 
 # Editors
