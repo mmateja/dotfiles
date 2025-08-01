@@ -28,4 +28,5 @@ Configuration files repository.
 
 ### Terminal
 
-I use [iTerm2](https://www.iterm2.com/) with Spacedust theme from https://iterm2colorschemes.com/
+I use [iTerm2](https://www.iterm2.com/) with Spacedust theme from https://iterm2colorschemes.com/ and VictorMono Nerd
+Font (installed by the `install.mac.sh` script).

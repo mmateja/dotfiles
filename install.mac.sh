@@ -68,5 +68,5 @@ brew install --cask \
 # Other
 brew install --cask \
 	iterm2 \
-	1password \
+	font-victor-mono-nerd-font \
 	gramps
