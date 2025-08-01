@@ -8,9 +8,11 @@ brew update
 brew install \
 	fish \
 	fisher \
+	spacedust \
 	bat \
 	awscli \
 	git \
+	git-delta \
 	go-task \
 	htop \
 	node \
