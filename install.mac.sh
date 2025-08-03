@@ -55,6 +55,7 @@ brew install --cask \
 
 # File Sharing
 brew install --cask \
+	google-drive \
 	localsend \
 	openmtp
 
