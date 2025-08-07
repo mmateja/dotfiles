@@ -22,7 +22,8 @@ brew install \
 	watch \
 	z \
 	colima \
-	docker
+	docker \
+	gh
 
 
 ######################### Cask Packages #########################
