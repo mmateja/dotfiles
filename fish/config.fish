@@ -17,4 +17,5 @@ for file in $fisher_path/conf.d/*.fish
 end
 
 starship init fish | source
+zoxide init fish | source
 
