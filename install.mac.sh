@@ -20,7 +20,7 @@ brew install \
 	pwgen \
 	tig \
 	watch \
-	z \
+	zoxide \
 	colima \
 	docker \
 	gh
