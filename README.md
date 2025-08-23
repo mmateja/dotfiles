@@ -24,9 +24,13 @@ Configuration files repository.
    ./setup.rb
    ```
 
-## Notes
+## Terminal configuration
 
-### Terminal
+I use [iTerm2](https://www.iterm2.com/) with one of the following color presets from https://iterm2colorschemes.com/:
 
-I use [iTerm2](https://www.iterm2.com/) with Spacedust theme from https://iterm2colorschemes.com/ and VictorMono Nerd
-Font (installed by the `install.mac.sh` script).
+- [Spacedust](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Spacedust.itermcolors)
+- [Neutron](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Neutron.itermcolors)
+- [MonaLisa](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/MonaLisa.itermcolors)
+
+The font that I am using is VictorMono Nerd which is installed by the `install.mac.sh` script.
+
