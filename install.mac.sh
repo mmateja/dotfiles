@@ -23,7 +23,8 @@ brew install \
 	zoxide \
 	colima \
 	docker \
-	gh
+	gh \
+	fzf
 
 
 ######################### Cask Packages #########################
