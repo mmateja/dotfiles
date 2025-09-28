@@ -21,7 +21,6 @@ brew install \
 	tig \
 	watch \
 	zoxide \
-	colima \
 	docker \
 	gh \
 	fzf
@@ -73,3 +72,10 @@ brew install --cask \
 	iterm2 \
 	font-victor-mono-nerd-font \
 	gramps
+
+
+######################### Custom Software #########################
+
+# https://github.com/AlexStrNik/Browserino
+brew tap AlexStrNik/Browserino
+brew install browserino --no-quarantine
