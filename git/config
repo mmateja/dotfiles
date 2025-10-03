@@ -37,3 +37,6 @@
 [diff]
 	colorMoved = default
 
+[fetch]
+	prune = true
+	pruneTags = true
