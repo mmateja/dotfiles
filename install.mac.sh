@@ -23,7 +23,8 @@ brew install \
 	zoxide \
 	docker \
 	gh \
-	fzf
+	fzf \
+	gdu
 
 
 ######################### Cask Packages #########################
@@ -38,7 +39,6 @@ brew install --cask \
 brew install --cask \
 	slack \
 	signal \
-	messenger \
 	whatsapp \
 	microsoft-teams \
 	zoom
