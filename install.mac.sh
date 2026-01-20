@@ -41,7 +41,8 @@ brew install --cask \
 	signal \
 	whatsapp \
 	microsoft-teams \
-	zoom
+	zoom \
+	caprine
 
 # Editors
 brew install --cask \
