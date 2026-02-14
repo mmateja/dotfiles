@@ -27,6 +27,7 @@
 [merge]
 	ff = false
 	conflictstyle = diff3
+	tool = rubymine
 [push]
 	default = current
 	autoSetupRemote = true
@@ -40,3 +41,7 @@
 [fetch]
 	prune = true
 	pruneTags = true
+[mergetool "rubymine"]
+	cmd = rubymine merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[mergetool]
+	prompt = false
