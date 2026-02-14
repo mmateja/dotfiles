@@ -24,6 +24,12 @@ Configuration files repository.
    ./setup.rb
    ```
 
+Might need to prepend PATH with brew bin directory
+```
+fish_add_path -p /opt/homebrew/bin
+```
+
+
 ## Terminal configuration
 
 I use [iTerm2](https://www.iterm2.com/) with one of the following color presets from https://iterm2colorschemes.com/:
