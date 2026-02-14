@@ -24,7 +24,8 @@ brew install \
 	docker \
 	gh \
 	fzf \
-	gdu
+	gdu \
+	rsync
 
 
 ######################### Cask Packages #########################
