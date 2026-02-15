@@ -29,6 +29,11 @@ Might need to prepend PATH with brew bin directory
 fish_add_path -p /opt/homebrew/bin
 ```
 
+Add scripts to PATH
+```
+fish_add_path (pwd)/scripts
+```
+
 
 ## Terminal configuration
 
