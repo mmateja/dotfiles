@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+
+
+def execute(command, error_message):
+    if os.system(command) != 0:
+        print(f'Error: {message}')
+        exit(1)
+
+
+def error(message):
+    print(f'Error: {message}')
+    exit(1)
+
+
+parser = argparse.ArgumentParser(
+    prog=os.path.basename(__file__),
+    description='Uploads local `photo-video` content to NAS',
+)
+parser.add_argument('--delete', action=argparse.BooleanOptionalAction, default=False, help='Remove source files after upload')
+args = parser.parse_args()
+
+source_directory = f'$HOME/photo-video/'
+target_directory = f'/Volumes/home/photo-video/'
+
+rsync_options = [
+    '-avh',
+    '--info=progress2',
+]
+
+if args.delete:
+    rsync_options.append('--remove-source-files')
+
+execute(f'rsync {' '.join(rsync_options)} {source_directory} "{target_directory}"', 'rsync failure')
