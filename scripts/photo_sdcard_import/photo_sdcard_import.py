@@ -2,7 +2,20 @@
 
 import argparse
 import os
+import re
 from datetime import date
+import subprocess
+
+
+def confirmation_prompt(message):
+    while True:
+        response = input(f"{message} (y/n): ").strip().lower()
+        if response in ("y", "yes"):
+            return True
+        elif response in ("n", "no"):
+            return False
+        else:
+            print('Please enter "y" or "n".')
 
 
 def album_directory(begin_date, end_date, album_name):
@@ -57,12 +70,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "--end", type=parse_date, help="End date of the photoshoot (dd-mm-yyyy)"
     )
-    parser.add_argument(
-        "--eject",
-        action=argparse.BooleanOptionalAction,
-        default=True,
-        help="Eject the volume after import",
-    )
     args = parser.parse_args()
 
     begin_date = args.begin
@@ -77,7 +84,22 @@ if __name__ == "__main__":
     if end_date < begin_date:
         error("End date must be after start date")
 
-    source_directory = f"/Volumes/{args.volume}/DCIM/100MSDCF/"
+    volumes_list = subprocess.check_output(["diskutil", "list"], text=True)
+    volume_matches = re.findall(
+        rf"^\s*\d+:\s+Windows_NTFS\s+({args.volume})\s+(128.0 GB)\s+(disk\d+)s1$",
+        volumes_list,
+        re.MULTILINE,
+    )
+
+    if not volume_matches:
+        error(f"Volume '{args.volume}' not found.")
+
+    if len(volume_matches) > 1:
+        error("Ambigious volume details.")
+
+    volume_name, volume_size, disk_identifier = volume_matches[0]
+
+    source_directory = f"/Volumes/{volume_name}/DCIM/100MSDCF/"
     target_directory = f"$HOME/photo-video/{album_directory(begin_date, end_date, args.album_name)}/raw/"
 
     execute(f'mkdir -p "{target_directory}"', "Failed to create target directory")
@@ -86,6 +108,14 @@ if __name__ == "__main__":
         "rsync failure",
     )
 
-    if args.eject:
-        print("Ejecting volume")
+    if confirmation_prompt(
+        f"Identified SD card as `{disk_identifier}` ('{volume_name}', {volume_size}). Do you want to format it?"
+    ):
+        execute(f"diskutil unmountDisk {disk_identifier}", "Failed to unmount volume")
+        execute(
+            f'diskutil eraseDisk ExFAT "{volume_name}" MBR {disk_identifier}',
+            "Failed to format volume",
+        )
+        execute(f"diskutil eject {disk_identifier}", "Failed to eject volume")
+    else:
         execute(f'diskutil eject "{args.volume}"', "Failed to eject volume")
