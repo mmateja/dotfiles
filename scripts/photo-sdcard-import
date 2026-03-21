@@ -5,15 +5,15 @@ import os
 from datetime import date
 
 
-def album_directory(args):
-    from_str = args.begin.strftime('%Y-%m-%d')
+def album_directory(begin_date, end_date):
+    from_str = begin_date.strftime('%Y-%m-%d')
 
-    if args.begin.year != args.end.year:
-        to_str = args.end.strftime('%Y-%m-%d')
-    elif args.begin.month != args.end.month:
-        to_str = args.end.strftime('%m-%d')
-    elif args.begin.day != args.end.day:
-        to_str = args.end.strftime('%d')
+    if begin_date.year != end_date.year:
+        to_str = end_date.strftime('%Y-%m-%d')
+    elif begin_date.month != end_date.month:
+        to_str = end_date.strftime('%m-%d')
+    elif begin_date.day != end_date.day:
+        to_str = end_date.strftime('%d')
     else:
         to_str = None
     
@@ -26,7 +26,7 @@ def parse_date(input):
 
 def execute(command, error_message):
     if os.system(command) != 0:
-        print(f'Error: {message}')
+        print(f'Error: {error_message}')
         exit(1)
 
 
@@ -44,9 +44,12 @@ parser = argparse.ArgumentParser(
 parser.add_argument('album_name', help='The name used in the album directory name')
 parser.add_argument('--volume', default='Untitled', help='Name of the SD card volume to copy data from')
 parser.add_argument('--begin', default=today, type=parse_date, help='Start date of the photoshoot (dd-mm-yyyy)')
-parser.add_argument('--end', default=today, type=parse_date, help='End date of the photoshoot (dd-mm-yyyy)')
+parser.add_argument('--end', type=parse_date, help='End date of the photoshoot (dd-mm-yyyy)')
 parser.add_argument('--eject', action=argparse.BooleanOptionalAction, default=True, help='Eject the volume after import')
 args = parser.parse_args()
+
+begin_date = args.begin
+end_date = args.end if args.end else begin_date
 
 if not args.album_name:
     error('Album name cannot be empty')
@@ -54,11 +57,11 @@ if not args.album_name:
 if '/' in args.album_name:
     error('Album name cannot include "/"')
 
-if args.end < args.begin:
+if end_date < begin_date:
     error('End date must be after start date')
 
 source_directory = f'/Volumes/{args.volume}/DCIM/100MSDCF/'
-target_directory = f'$HOME/photo-video/{album_directory(args)}/raw/'
+target_directory = f'$HOME/photo-video/{album_directory(begin_date, end_date)}/raw/'
 
 execute(f'mkdir -p "{target_directory}"', 'Failed to create target directory')
 execute(f'rsync -avh --info=progress2 {source_directory} "{target_directory}"', 'rsync failure')
