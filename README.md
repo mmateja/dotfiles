@@ -31,7 +31,7 @@ fish_add_path -p /opt/homebrew/bin
 
 Add scripts to PATH
 ```
-fish_add_path (pwd)/scripts
+fish_add_path (pwd)/scripts/bin
 ```
 
 

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+tasks:
+  default:
+    desc: Run all the checks
+    cmds:
+      - task: test
+      - task: lint
+      - task: format
+  test:
+    desc: Run tests
+    cmds:
+      - pytest
+  lint:
+    desc: Run linter
+    cmds:
+      - ruff check --fix
+  format:
+    desc: Run code formatter
+    cmds:
+      - ruff format
